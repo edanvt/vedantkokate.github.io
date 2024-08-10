@@ -16,54 +16,7 @@ html,body{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-nav{
-    background-color: white;
-}
-nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-}
-nav li{
-    height: 50px;
-}
-nav a{
-    height: 100%;
-    padding: 0px 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color:black;
-}
-nav a:hover{
-    background-color: azure;
-}
-nav li:first-child{
-    margin-right: auto;
-}
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: #ffffff69;
-    backdrop-filter: blur(10px);
-    box-shadow: -10 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.sidebar li{
-    width: 100%;
-}
-.sidebar a{
-    width: 100%;
-}
+
 
 
 
@@ -180,22 +133,168 @@ span1{
     background-color: none;
     padding: 90px;
     padding-left: 500px;
-    width: 50%;
+    /* width: ; */
     font-style: italic;
     color: #453168;
 }
-.barflex{
-    display: flex;
-    
+.skill-bar li{
+    margin: 20px 0;
+    padding: 10px;
+    list-style: none;
+}
+.bar{
+    background: #e6e6e6;
+    display: block;
+    height: 4px;
+    border: 1px none rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+}
+
+.bar span{
+    height: 18px;
+    float: left;
+    background-color: #6e11ac;
+}
+.htmlc{
+    width: 90%;
+    animation: htmlc 3s;
+}
+.ve{
+    width: 100%;
+    animation: ve 3s;
+}
+.nt{
+    width: 74%;
+    animation: nt 3s;
+}
+.d{
+    width: 90%;
+    animation: d 3s;
+}
+.js{
+    width: 40%;
+    animation: js 3s;
+}
+.car{
+    width: 100%;
+    animation: car 3s;
+}
+.db{
+    width: 60%;
+    animation: db 3s;
+}
+
+.english{
+    width: 90%;
+    animation: english 3s;
+}
+
+.marathi{
+    width: 100%;
+    animation: marathi 3s;
+}
+.hindi{
+    width: 75%;
+    animation: hindi 3s;
+}
+
+@keyframes htmlc{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes ve{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes nt{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 74%;
+    }
+}
+@keyframes d{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes car{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes db{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes english{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes marathi{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes hindi{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+hr{
+    width: 40px;
+    margin-left: 10px;
+    border: 1px solid black;
 }
 
 .skill{
-    width: 60%;
+    width: 70%;
     font-size: larger;
     font-style: normal;
     color: black;
 }
 .lang{
+    width: 70%;
     font-size: larger;
     font-style: normal;
     color: black;
@@ -258,7 +357,7 @@ background: linear-gradient(141deg, rgba(195,254,255,1) 0%, rgba(189,150,255,1) 
     color: black;    
 }
 
-@media screen and (max-width: 432px)
+@media screen and (max-width: 412px)
 {
     .navibar{
         padding: 1px;
@@ -303,7 +402,80 @@ background: linear-gradient(141deg, rgba(195,254,255,1) 0%, rgba(189,150,255,1) 
     .skill-bar{
         padding: 14px;
         padding-left: 48px;
-        width: 88%;
+        width: 108%;
+    }
+    .interests{
+        padding: 60px;
+        padding-left: 38px;
+    }
+    .col2{
+        padding-left: 72px;
+    }
+    .foot{
+        display: block;
+    }
+    .ftext{
+        padding-left: 48px;
+        width: 100%;
+    }
+    .socials2{
+        padding-left: 6px;
+        padding-bottom: 4px;
+    }
+    .contacts{
+        padding: 45px;
+        padding-left: 48px;
+        width: 100%;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1080px)
+{
+    .navibar{
+        padding: 1px;
+    }
+
+    .navibar ul li{
+        font-size: 18px;
+    }
+    .image_text{
+        background-size: 167%;
+        display: block;
+    }
+    .text{
+        text-align: center;
+        width: 50%;
+        font-size: 15px;
+        padding: 30%;
+        padding-bottom: 170px;
+    }
+    .image{
+        width: 77%;
+        font-size: 16px;
+        padding: 50px;
+    }
+    img{
+        width: 52%;
+    }
+    .socials{
+        padding: 6px;
+    }
+    .about{
+        padding: 31px;
+        padding-left: 53px;
+        padding-bottom: 95px;
+        width: 123%;
+    }
+    .education-exp{
+        display: block;
+        width: 143%;
+        padding-left: 14%;
+    }
+    .skill-bar{
+        padding: 14px;
+        padding-left: 48px;
+        width: 108%;
     }
     .interests{
         padding: 60px;
