@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+}
+
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.navibar ul li{
+        list-style: none;
+        display: inline-flex;
+        padding-left: 20px;
+        font-size: 22px;
+
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #701dffe2;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+    margin-top: 38px;
+}
+
+.navibar{
+    
+    background-color: #7021f9;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navibar a:hover{
+    color: #ddcaff;
+}
+
+.image_text{
+    
+    background-image: url(pexels-life-of-pix-7974.jpg);
+    background-size: 80%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    display: flex;
+    
+}
+
+
+.text{
+    background-color: rgba(11, 11, 11, 0.599);
+    color: aliceblue;
+    font-size: 30px;
+    padding: 300px;
+    width: 50%;
+}
+
+img{
+    
+    width: 65%;  
+}
+.image{
+    background-color: #7021f9;
+    padding: 80px;
+    color: white;
+    align-content: center;
+    text-align: center;
+    width: 20%;
+    font-size: 20px;
+}
+
+
+.socials{
+    padding: 30px;
+}
+
+.a1, .a2, .a3{
+    font-size: 30px;
+    padding-left: 15px;
+    color: white;    
+}
+
+input{
+    font-size: 22px;
+    color: azure;
+    background-color: rgb(53, 71, 69);
+    border-radius: 95px;
+    border: none;
+    padding: 10px 30px 10px 30px;
+}
+
+.about{
+    background-color: #f2ebffbf;
+    margin: 0;
+    padding: 90px;
+    color: #453168;
+    padding-left: 500px;
+    font-size: large;
+    font-style: italic;
+    padding-bottom: 100px;
+}
+.me{
+    width: 60%;
+    color: black;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.education-exp{
+    display: flex;
+    width: 60%;
+    padding-left: 500px;
+}
+
+.education{
+    
+    padding: 90px;
+    color: #453168;
+    padding-left: 0;
+    width: 50%;
+    font-style: italic;
+}
+span{
+    color: black;
+    font-style: normal;
+}
+
+.exp{
+   
+    padding: 90px;
+    color: #453168;
+    padding-left: 0;
+    width: 50%;
+    font-style: italic;
+}
+span1{
+    color: black;
+    font-style: normal;
+}
+
+.skill-bar{
+    background-color: none;
+    padding: 90px;
+    padding-left: 500px;
+    /* width: ; */
+    font-style: italic;
+    color: #453168;
+}
+.skill-bar li{
+    margin: 20px 0;
+    padding: 10px;
+    list-style: none;
+}
+.bar{
+    background: #e6e6e6;
+    display: block;
+    height: 4px;
+    border: 1px none rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1)
+}
+
+.bar span{
+    height: 18px;
+    float: left;
+    background-color: #6e11ac;
+}
+.htmlc{
+    width: 90%;
+    animation: htmlc 3s;
+}
+.ve{
+    width: 100%;
+    animation: ve 3s;
+}
+.nt{
+    width: 74%;
+    animation: nt 3s;
+}
+.d{
+    width: 90%;
+    animation: d 3s;
+}
+.js{
+    width: 40%;
+    animation: js 3s;
+}
+.car{
+    width: 100%;
+    animation: car 3s;
+}
+.db{
+    width: 60%;
+    animation: db 3s;
+}
+
+.english{
+    width: 90%;
+    animation: english 3s;
+}
+
+.marathi{
+    width: 100%;
+    animation: marathi 3s;
+}
+.hindi{
+    width: 75%;
+    animation: hindi 3s;
+}
+
+@keyframes htmlc{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes ve{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes nt{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 74%;
+    }
+}
+@keyframes d{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes car{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes db{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes english{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes marathi{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes hindi{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+hr{
+    width: 40px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+
+.skill{
+    width: 70%;
+    font-size: larger;
+    font-style: normal;
+    color: black;
+}
+.lang{
+    width: 70%;
+    font-size: larger;
+    font-style: normal;
+    color: black;
+}
+
+.interests{
+    padding: 90px;
+    padding-left: 500px;
+    font-style: italic;
+    color: #453168;
+}
+.row{
+    display: flex;
+}
+.col2,.col1{
+    color: black;
+    font-style: normal;
+    font-size: larger;
+}
+.col2{
+
+    padding-left: 220px;
+}
+
+.foot{
+    display: flex;
+}
+
+.ftext{
+    background-color: #a687db; 
+    padding: 90px;
+    padding-left: 500px;
+    width: 32%;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.contacts{
+    background-color: #a687db;
+    padding: 90px;
+    padding-left: 0;
+    width: 50%;
+    padding-top: 105px;
+    font-size: large;
+}
+
+.socials2{
+    padding-top: 24px;
+    background-color: noneaqua;
+    
+}
+
+.b1, .b2, .b3{
+    font-size: 30px;
+    padding-left: 0px;
+    padding-right: 36px;
+    color: black;    
+}
+
+@media screen and (max-width: 412px)
+{
+    .navibar{
+        padding: 1px;
+    }
+
+    .navibar ul li{
+        font-size: 18px;
+    }
+    .image_text{
+        background-size: 167%;
+        display: block;
+    }
+    .text{
+        text-align: center;
+        width: 50%;
+        font-size: 14px;
+        padding: 26%;
+    }
+    .image{
+        width: 77%;
+        font-size: 16px;
+        padding: 50px;
+    }
+    img{
+        width: 52%;
+    }
+    .socials{
+        padding: 6px;
+    }
+    .about{
+        padding: 31px;
+        padding-left: 53px;
+        padding-bottom: 95px;
+        width: 123%;
+    }
+    .education-exp{
+        display: block;
+        width: 143%;
+        padding-left: 14%;
+    }
+    .skill-bar{
+        padding: 14px;
+        padding-left: 48px;
+        width: 88%;
+    }
+    .interests{
+        padding: 60px;
+        padding-left: 38px;
+    }
+    .col2{
+        padding-left: 72px;
+    }
+    .foot{
+        display: block;
+    }
+    .ftext{
+        padding-left: 48px;
+        width: 100%;
+    }
+    .socials2{
+        padding-left: 6px;
+        padding-bottom: 4px;
+    }
+    .contacts{
+        padding: 45px;
+        padding-left: 48px;
+        width: 100%;
+        padding-top: 0;
+    }
+}
+
+@media (max-width:400px) {
+    .hideOnMobile{
+        display: none;
+    }
+}
