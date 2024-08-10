@@ -81,13 +81,17 @@ a{
     padding: 300px;
     width: 50%;
 }
+h1,h2{
+    font-family: "DM Serif Display", serif;
+}
 
 img{
     
     width: 65%;  
 }
 .image{
-    background-color: #7021f9;
+     background: rgb(44,252,255);
+background: linear-gradient(141deg, rgba(44,252,255,1) 0%, rgba(112,33,249,1) 100%);
     padding: 80px;
     color: white;
     align-content: center;
@@ -357,6 +361,8 @@ hr{
 
 .foot{
     display: flex;
+    background: rgb(195,254,255);
+background: linear-gradient(141deg, rgba(195,254,255,1) 0%, rgba(189,150,255,1) 100%);
 }
 
 .ftext{
