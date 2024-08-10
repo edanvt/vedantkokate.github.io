@@ -258,7 +258,7 @@ background: linear-gradient(141deg, rgba(195,254,255,1) 0%, rgba(189,150,255,1) 
     color: black;    
 }
 
-@media screen and (max-width: 412px)
+@media screen and (max-width: 432px)
 {
     .navibar{
         padding: 1px;
